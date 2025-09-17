@@ -1,0 +1,18 @@
+---
+apiVersion: V1
+kind: Service
+metadata:
+  name: Tej-InraService
+spec:
+  ports:
+    - port: 8090
+      nodePort: 30001
+      targetPort: 8080
+      protocol: tcp
+    selector:
+       app: vproapp
+    type: NodePort
+
+     
+
+    
