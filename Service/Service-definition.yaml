@@ -5,13 +5,13 @@ metadata:
   name: Tej-InraService
 spec:
   ports:
-    - port: 8090
-      nodePort: 30001
-      targetPort: 8080
-      protocol: tcp
-    selector:
+   - port: 8090
+     nodePort: 30001
+     targetPort: vproapp-port
+     protocol: TCP
+  selector:
        app: vproapp
-    type: NodePort
+  type: NodePort
 
      
 
