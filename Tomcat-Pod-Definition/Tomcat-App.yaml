@@ -1,0 +1,16 @@
+---
+apiVersion: V1
+kind: Pod
+metadata:
+  name: Tomcat-app
+  labels:
+    app: Tomcat-app
+spec:
+  containers:
+    - name: appcontainer
+      image: tejesh1105/vprofileapp:V2
+      ports:
+        - name: Tomcatapp-port
+          containerPort: 8080
+
+ 
