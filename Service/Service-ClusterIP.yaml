@@ -1,0 +1,14 @@
+---
+apiVersion: V1
+kind: Service
+metadata:
+  name: Tej-InraService
+spec:
+  type: ClusterIP
+  ports:
+  - targetPort: 8080
+    Port: 8080 
+    protocol: TCP
+  selector:
+    app: vproapp
+ 
